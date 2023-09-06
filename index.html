@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="index">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>Cascading StyleSheets & Web Design</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+
+  <script src="scripts/script.js" defer></script>
+
+</head>
+
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <nav>
+    <div class="container">
+      <button class="nav-toggle" type="menu" aria-label="open navigation">
+        <img class="hamburger" src="https://i.postimg.cc/RC7zSS73/logo.png" alt="Conquering Responsive Layouts Logo" />
+      </button>
+      <menu>
+        <figure class="kp-logo">
+          <a href="https://www.kevinpowell.co/courses/" target="_blank" rel="noopener noreferrer"
+            title="Opens in a new web-browser-tab">
+            <img src="images/kp-logo.svg" alt="LOGOHERE" />
+          </a>
+        </figure>
+        <li>
+          <a href="box-model.html">Box Model</a>
+        </li>
+        <li>
+          <a href="floats-clears.html">Floats & Clears</a>
+        </li>
+        <li>
+          <a href="responsive.html">Responsive Design</a>
+        </li>
+        <li>
+          <a href="bootstrap-4.html">Bootstrap 4 - Codeplay</a>
+        </li>
+        <li>
+          <a href="bootstrap-5.html">Bootstrap 5 - TinDog</a>
+        </li>
+      </menu>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>
+        <data value="Cascading Stylesheets">
+          <dfn>
+            <abbr title="Cascading StyleSheets">CSS</abbr>
+          </dfn>
+        </data>
+      </h1>
+
+      <div class="col">
+        <dl>
+          <dt>Web Design planning</dt>
+          <dd>Getting ideas from other websites</dd>
+          <dd>Sketches</dd>
+          <dd>Figma</dd>
+        </dl>
+
+        <a class="btn" href="https://youtube.com/@DesignCourse" target="_blank" rel="noopener noreferrer"
+          title="Opens in a new web-browser-tab">
+          Design Course
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="col">
+        <h2>Text</h2>
+        <p>
+          A visually impaired user might want to make the text bigger on all websites they visit, or a user with
+          severecolor deficiency might want to put all websites in high contrast colors that are easy for them to see.
+          Whatever
+          the need, you should be comfortable with this, and make your designs flexible enough so that such changes will
+          work in your design. As an example, you might want to make sure your main content area can handle bigger text
+          (maybe it will start to scroll to allow it all to be seen), and won't just hide it, or break completely.
+        </p>
+      </div>
+
+      <div class="col">
+        <h2>Link styling</h2>
+        <p>
+          Something should definitely happen when states change, and you shouldn't get rid of the pointer cursor or the
+          underline — both are very important accessibility aids for those using keyboard controls. Color should not be
+          used as the sole method of distinguishing links from non-linking content. Link text color, like all text, has
+          to
+          be significantly different from the background color (a 4.5:1 contrast). In addition, links should visually be
+          significantly different from non-linking text, with a minimum contrast requirement of 3:1 between link text
+          and
+          surrounding text and between default, visited, and focus/active states and a 4:5 contrast between all those
+          state colors and the background color.
+        </p>
+      </div>
+
+      <div class="col">
+        <h2>Form styling</h2>
+        <p>
+          You shouldn't however deviate too much from the expected visual feedback form elements receive when they are
+          focused, which is basically the same as links (see above). You could style form focus/hover states to make
+          this
+          behavior more consistent across browsers or fit in better with your page design, but don't get rid of it
+          altogether — again, people rely on these clues to help them know what is going on.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container">
+    <article>
+      <dl>
+        <dt>Choose colors suitable for the page theme!</dt>
+        <dd>Red: Passion, energy, intensity - For cars</dd>
+        <dd>Yellow: Joy, intellect, attention - For advertising that gets noticed or for maximum navigation.</dd>
+        <dd>Green: Freshness, safety, growth - For food</dd>
+        <dd>Blue: Stability, trust, calmness - Money themes, Ictys</dd>
+        <dd>Purple: Superiority, wealth, femininity - Themes aimed at women</dd>
+
+        <dt>Choose 2-3 colors (+ black, white)!</dt>
+        <dd>Analogous choice: several shades of a color (e.g. red, orange, burgundy) - It can be good for navigation,
+          text body, logo and its background.</dd>
+        <dd>Complementary choice (recommended - except for text and background): Opposite colors
+          <ul>
+            <li>Dark Blue - Mustard Yellow</li>
+            <li>Blue - Orange</li>
+            <li>Light Blue - Dark Orange</li>
+            <li>Green - Red</li>
+            <li>Light green - Burgundy</li>
+            <li>Lemon Yellow - Purple</li>
+          </ul>
+        </dd>
+        <dd>Dragging shapes: ...Color circle</dd>
+        <dd>Color palette generation: Adobe Color</dd>
+        <dd>AAA contrasts: Your text color should contrast well with your background color.</dd>
+      </dl>
+
+      <img src="https://i.postimg.cc/bwSwyX3s/hero-img.jpg" alt="UX Design Sketches" />
+
+      <dl>
+        <dt>For typography use maximum 2 font families!</dt>
+        <dd>Title: serif OR contrastingly fatter sans-serif</dd>
+        <dd>Text body: 'humanist' sans-serif
+          <ul>
+            <li>Serif: Traditional, stable, respectable</li>
+            <li>Sans-serif: Sensitive, simple, clear</li>
+            <li>Cursive: Personal, creative, elegant</li>
+            <li>Display: Friendly, loud, fun</li>
+            <li>Modern: Stylish, fashionable, smart</li>
+          </ul>
+        </dd>
+        <dd>Select sensible font sizes, line heights, letter spacing, etc. to make your text logical, legible, and
+          comfortable to read.</dd>
+        <dd>Make sure your headings stand out from your body text, typically big and bold like the default styling. Your
+          lists should look like lists.</dd>
+        <dd>Spacing may be created using CSS properties such as margin.</dd>
+      </dl>
+    </article>
+
+    <aside>
+      <p>
+        <strong>Tables:</strong> Table CSS generally serves to make the table fit better into your
+        design and look less ugly. It is a good idea to make sure the table headers stand out (normally using bold), and
+        use zebra striping to make different rows easier to parse.
+      </p>
+
+      <dl>
+        <dt>UX</dt>
+        <dd>Simplicity instead of exaggeration!</dd>
+        <dd>Consistency on every web page (eg layout)!</dd>
+        <dd>Knowledge of reading direction: 'F' or 'Z' direction!</dd>
+        <dd>(Mobile first) responsive design!</dd>
+        <dd>Testing, feedback from others...!</dd>
+        <dd>Make the text of forms (especially for acceptable 'checkboxes') clear!</dd>
+      </dl>
+
+      <dl>
+        <dt>UI</dt>
+        <dd>It is important to highlight those elements hierarchically with colors, sizes, shadows, formatting, etc...
+          to which we want to draw the users' attention first. Ex: headlines rather than logos.</dd>
+        <dd>When it comes to layout, it is important that the content is organized into sections, that there are shapes,
+          images and properly used colors. The square shape, for example, is stronger than the circle, but the latter,
+          for example, is more beautiful.</dd>
+        <dd>Use 35 characters per line and about 6 words in the text blocks.</dd>
+        <dd>The alignment of the text should be the same as the headline (title and text aligned to the left).</dd>
+        <dd>Adding spaces around the elements, giving a minimalist look.</dd>
+        <dd>Flexibility in design, for the sake of the audience.</dd>
+      </dl>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h2>
+        <data value="Felhasználói Tapasztalat">
+          <dfn>
+            <abbr title="User Experience">UX</abbr>
+          </dfn>
+        </data> /
+        <data value="Felhasználói Felület">
+          <dfn>
+            <abbr title="User Interface">UI</abbr>
+          </dfn>
+        </data> and
+        <data value="Akadálymentesítés">
+          <dfn>
+            <abbr title="Web Accessibility">A11y</abbr>
+          </dfn>
+        </data>
+      </h2>
+
+      <div class="footer__content">
+
+        <dl class="footer__about">
+          <dt>Code Refactoring</dt>
+          <dd>1. Readability</dd>
+          <dd>2. Modularity</dd>
+          <dd>3. Efficiency</dd>
+          <dd>4. Length</dd>
+          <dt>BUG</dt>
+          <dd>#1: Wrong URL to the CSS file</dd>
+          <dd>#2: Typo in the code (bad syntax)</dd>
+          <dd>#3: CSS Specificity</dd>
+        </dl>
+  
+        <div class="footer__links">
+          <dl class="footer__link">
+            <dt>Basics</dt>
+            <dd>
+              <a href="https://chat.openai.com/share/2c73e75a-1f09-4216-aaf6-3b782db6bd01" target="_blank"
+                rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="ChatGPT">Download & Use Google
+                Fonts
+                Locally</a>
+            </dd>
+            <dd>
+              <a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Selectors</a>
+            </dd>
+            <dd>
+              <a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html" target="_blank"
+                rel="noopener noreferrer" title="Opens in a new web-browser-tab">Specificity</a>
+            </dd>
+            <dd>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank"
+                rel="noopener noreferrer" title="Opens in a new web-browser-tab." aria-label="MDN">Shorthand properties</a>
+            </dd>
+            <dd>
+              <a href="https://en.bem.info/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">BEM methodology</a>
+            </dd>
+          </dl>
+    
+          <dl class="footer__link">
+            <dt>Layouts</dt>
+            <dd>
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Flexbox</a>
+            </dd>
+            <dd>
+              <a href="https://codepip.com/games/flexbox-froggy/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Flexbox Froggy Playground</a>
+            </dd>
+            <dd>
+              <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Grid</a>
+            </dd>
+            <dd>
+              <a href="https://codepip.com/games/grid-garden/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Grid Garden Playground</a>
+            </dd>
+          </dl>
+    
+          <dl class="footer__link">
+            <dt>Processors & Frameworks</dt>
+            <dd>
+              <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab." aria-label="sass-lang">SCSS & SASS</a>
+            </dd>
+            <dd>
+              <a href="https://www.freecodecamp.org/news/what-is-postcss/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab." aria-label="freeCodeCamp">PostCSS</a>
+            </dd>
+            <dd>
+              <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Bootstrap</a>
+            </dd>
+            <dd>
+              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">Tailwind</a>
+            </dd>
+          </dl>
+        </div>  
+      </div>
+    </div>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
+</body>
+
+</html>

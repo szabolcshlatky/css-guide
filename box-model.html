@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="box-model">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>Cascading StyleSheets - Box Model</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <header>
+    <h1>
+      <data value="Cascading Stylesheets">
+        <dfn>
+          <abbr title="Cascading StyleSheets">CSS</abbr>
+        </dfn>
+      </data> Box Model
+    </h1>
+  </header>
+
+  <hr />
+
+  <dl>
+    <dt>display</dt>
+    <dd>inline // Can't be positioned and box modelled, but it takes only content-size of the element.</dd>
+    <dd>block // Can be positioned and box modelled, but takes a full width of the page.</dd>
+    <dd>inline-block // Can be positioned, box modelled and other (non-block level) elements can be next to it.</dd>
+    <dd>none vs. visibility: hidden // The visibility keeps the unseen element's position.</dd>
+
+    <dt>position</dt>
+    <dd>static // natural HTML flow. z-index doesn't work with it.</dd>
+    <dd>relative // to its static HTML position.</dd>
+    <dd>absolute // relative to its (relative) parent element and takes out the element from the natural HTML flow.</dd>
+    <dd>fixed // relative to its viewport.</dd>
+
+    <dt>Centering elements</dt>
+    <dd><code>text-align: center;</code> centers a text inside a block, but not centers the block itself.</dd>
+    <dd>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab." aria-label="MDN">margin</a>: 0 auto;</code>
+      centers a block (with width less than 100% or auto) horizontally.
+    </dd>
+    <dd>Inside a relative positioned element...
+      <pre>
+      {
+        position: absolute; // or fixed (relative positioned parent doesn't needed)
+        top: 50%; // or bottom: 50%
+        left: 50%; // or right: 50%
+        transform: translate(-50%, -50%);
+      }
+      </pre>
+    </dd>
+  </dl>
+
+  <hr />
+
+  <main id="main">
+
+    <div class="box-200 lightblue">
+      <p>width, min-width, max-width</p>
+    </div>
+    <div class="box-200 lightskyblue">
+      <p>height, min-height, max-height</p>
+    </div>
+    <div class="box-200 lightsteelblue">
+      <p>box-sizing</p>
+    </div>
+
+    <div class="box-100 lightcoral">
+      <p>display</p>
+    </div>
+    <div class="box-100 lightseagreen">
+      <p>overflow</p>
+    </div>
+    <div class="box-100 lightgoldenrodyellow">
+      <p>visibility</p>
+    </div>
+
+    <div class="absolute-box-100 gold">
+      <p>position, top, right, bottom, left, z-index</p>
+    </div>
+    <div class="absolute-box-100 silver">
+      <p>font & text properties + letter-spacing</p>
+    </div>
+    <div class="absolute-box-100 bronze">
+      <p>outline</p>
+    </div>
+
+    <section class="absolute-position">
+      <div class="absolute-box-100 darkgoldenrod">margin</div>
+      <div class="absolute-box-100 burlywood">border</div>
+      <div class="absolute-box-100 lightgreen">padding</div>
+    </section>
+  </main>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it's switched off!</noscript>
+
+</body>
+
+</html>

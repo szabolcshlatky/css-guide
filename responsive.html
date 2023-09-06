@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="responsive">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>Cascading StyleSheets - Responsive Design</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+
+  <!-- <script src="scripts/script.js" defer></script> -->
+
+</head>
+
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <header class="intro">
+    <div class="container">
+      <h1 class="intro__title">
+        <data value="Cascading Stylesheets">
+          <dfn>
+            <abbr title="Cascading StyleSheets">CSS</abbr>
+          </dfn>
+        </data> Responsive design
+      </h1>
+      <dl class="intro__text">
+        <dt>Challenge #1 INSTRUCTIONS</dt>
+        <dd>You may modify the HTML (i.e. adding new classes) if needed (you probably should for these challenges)
+        </dd>
+        <dd>Limit the total width of the .intro-conent to about half of it's parent.</dd>
+        <dd>Stop the text from overflowing out the bottom at small screen widths.</dd>
+        <dt>Challenge #2 INSTRUCTIONS</dt>
+        <dd>Keep the text inside .intro-content in the same place, but have the background extend from one side of the
+          viewport to the other, no matter how wide or narrow the browser is.</dd>
+        <dd>Limit the maximum width of the text in the bottom area.</dd>
+        <dt>Challenge #3 INSTRUCTIONS</dt>
+        <dd><a
+            href="https://www.figma.com/file/dGPcL6Ym2avOt4736aHb2B/conquer-responsive-layout-week-1-final-challenge?node-id=0%3A1"
+            target="_blank" rel="noopener noreferrer" title="Opens a in a new web-browser-tab">Figma file</a></dd>
+        <dd><a href="documents/challenge-design-specs.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dt>Challenge #4 INSTRUCTIONS</dt>
+        <dd><a href="documents/02-03-challenge-layout.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dd><a href="https://codepen.io/kevinpowell/pen/ZEbpGjE?editors=1100" target="_blank"
+            rel="noopener noreferrer" title="Opens a in a new web-browser-tab">Codepen</a></dd>
+        <dd>The headings in the first row must be a different color</dd>
+        <dd>The two .col at the bottom must go next to one another as per the design specs provided</dd>
+        <dd>The section at the bottom should have a dark background color and a different color of text</dd>
+        <dd>I've removed the "gap" that I created during the demo, so you'll have to add it back in</dd>
+        <dt>Challenge #5 INSTRUCTIONS</dt>
+        <dd><a href="documents/02-05-challenge.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dd><a href="https://codepen.io/kevinpowell/pen/NWGRELP" target="_blank" rel="noopener noreferrer"
+            title="Opens a in a new web-browser-tab">Codepen</a> (All text is in the JS section this pen)</dd>
+        <dd>Use this code for the image (not the same image!)
+          <code>&lt;img src="https://unsplash.it/386/292" alt=""/&gt;</code>
+        </dd>
+        <dd>Refer to the design specs for the overall layout</dd>
+        <dd>The image should line up with the sidebar in the section below</dd>
+        <dt>Challenge #6 INSTRUCTIONS</dt>
+        <dd><a href="https://codepen.io/kevinpowell/pen/dyYNWXb" target="_blank" rel="noopener noreferrer"
+            title="Opens a in a new web-browser-tab">Codepen</a> (All text is in the text.md file)</dd>
+        <dd>Get all the navigation items next to one another</dd>
+        <dd>Add a space between all the item</dd>
+        <dt>Challenge #7 INSTRUCTIONS</dt>
+        <dd><a href="documents/flexbox-challenge-4.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dd><a href="responsive.html" target="_self">Solution</a></dd>
+        <dt>Challenge #8 INSTRUCTIONS</dt>
+        <dd><a href="documents/navigation-challenges.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dd><a href="https://codepen.io/kevinpowell/pen/zYvEKJx" target="_blank" rel="noopener noreferrer"
+            title="Opens a in a new web-browser-tab">Codepen</a></dd>
+        <dd>Make the navigation layout work on both mobile and large screens.</dd>
+        <dd>Mobile-first, so mobile styles first, then add the large screen styles inside the existing media query.
+        </dd>
+        <dt>Challenge #9 INSTRUCTIONS</dt>
+        <dd><a href="documents/final-challenge-specs.pdf" target="_blank" rel="noopener noreferrer"
+            title="Opens a PDF file from new web-browser-tab">Design Spec</a></dd>
+        <dd><a href="index.html" target="_blank" rel="noopener noreferrer"
+            title="Opens a in a new web-browser-tab">Solution</a></dd>
+      </dl>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section-two">
+      <h2 class="section-title section-title--dark">
+            Conquering Responsive Layouts
+      </h2>
+      <div class="row">
+          <dl class="col">
+            <dt>Basics</dt>
+            <dd>
+              Every HTML needs:
+              <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code>
+            </dd>
+            <dd>
+              Use <a href="https://en.bem.info/" target="_blank" rel="noopener noreferrer"
+                title="Opens in a new web-browser-tab">B__E--M</a> methodology for classnames where its possible.
+            </dd>
+            <dd>
+              Use <code>box-sizing: border-box;</code> instead of the default <code>content-box;</code>.
+            </dd>
+            <dd>
+              Mobile first approach!
+            </dd>
+          </dl>
+          <dl class="col">
+            <dt>Widths & Heights</dt>
+            <dd>
+              Avoid heights; for more background space use padding. Most of the case the default auto value is enough.
+              If
+              a hero needs to fill the screen then use <code>100svh</code>
+            </dd>
+            <dd>
+              Avoid fixed unit widths, because children elements can overflow. With the basic auto value every page is
+              fully responsive. 100% with margin causes overflow horizontally. CSS tries to keep information, but with
+              <code>overflow: hidden;</code> we lose content.
+            </dd>
+            <dd>
+              <code>width: 80%;</code> means 80% of the parent element and with <code>margin: 0 auto;</code> it centers
+              the block horizontally.
+            </dd>
+            <dd>
+              To make an image responsive, put it into a figure element and add 100% max-width to it.
+            </dd>
+          </dl>
+      </div>
+    </section>
+
+    <section class="section-three">
+      <div class="container row">
+        <figure class="col">
+          <img src="images/image-01.jpg" alt="a sunset over a mountain range" />
+        </figure>
+        <dl class="col">
+          <dt class="section-title">Units</dt>
+          <dd>
+            By browser default the root (html) element's font-size is 16px. 1rem = 16px (it checks the letter M). Best
+            unit for font-size.
+          </dd>
+          <dd>
+            1em = the closest parent element's font-size (where is set up). Best unit for margin and padding.
+          </dd>
+          <dd>
+            min() & max() (Min() & Max() in SCSS) accept two or more values(even more min, max or math values with
+            space
+            between the operators). Use cases:<br />
+            <code>width: Min(70%, 500px)</code>; which is like width and max-width (the block won't be bigger).<br />
+            <code>width: Max(70%, 500px)</code>; which is like width and min-width (the block won't be smaller).
+          </dd>
+          <dd>
+            clamp() accepts three values as min() or max(). It can be used for:
+            <code>width: clamp(min-width, width, max-width);</code> but the best usecase is for font-sizes.
+          </dd>
+          <dd>
+            <code>width: max-content</code> will grow the block's size to fit the content without break and overflows.
+          </dd>
+          <dd>
+            <code>width: min-content</code> will shrink the block's size based on the longest word. It is useful
+            sometimes
+            for grid.
+          </dd>
+          <dd>
+            <code>width: fit-content</code> won't overflow and will wrap the text.
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section-four">
+      <div class="container row">
+        <dl class="col">
+          <dt class="section-title"><code>@media type feature</code></dt>
+          <dd><code>@media print { CSS rules }</code> changes the given styles when the page gets printed.</dd>
+          <dd><code>@media speech { CSS rules }</code> changes the given styles when reading software is activated on the site for accessibility purposes.</dd>
+          <dd><code>@media screen (min-width: 900px)</code> or <code>@media (max-width: 900px) { CSS rules }</code> changes the given styles depending on screen sizes.</dd>
+          <dd>Because @media is a boolean conditional statement it can look like this too: <code>@media (min-width: 900px) and (max-width: 1000px)</code>
+          </dd>
+          <dd>Choose breakpoints by playing around with the DevTools and not the usual ones.</dd>
+          <dd>The most common breakpoints:
+            <ul>
+              <li>600px</li>
+              <li>900px</li>
+              <li>1200px</li>
+              <li>1800px</li>
+            </ul>
+          </dd>
+        </dl>
+        <figure class="col">
+          <img src="images/image-02.jpg" alt="a sunset over a mountain range with tree branches in the foreground" />
+        </figure>
+      </div>
+    </section>
+      
+  </main>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
+</body>
+
+</html>

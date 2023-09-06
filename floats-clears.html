@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="floats">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>Cascading StyleSheets - Float & Clear</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/favicon.ico" />
+
+</head>
+
+<figure class="logo">
+  <a href="index.html" title="To the index page.">
+    <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+  </a>
+  <figcaption>
+    <button type="button" title="Skip to the main content." onclick="location.href='#main';" style="color: black;">About</button>
+  </figcaption>
+</figure>
+
+<body>
+  <header>
+    <img class="cloud__top" src="images/cloud.png" alt="cloud-img" />
+    <h1>
+      <data value="Cascading Stylesheets">
+        <dfn>
+          <abbr title="Cascading StyleSheets">CSS</abbr>
+        </dfn>
+      </data>
+    </h1>
+    <h2><ins>float</ins> & <ins>clear</ins></h2>
+    <img class="cloud__bottom" src="images/cloud.png" alt="cloud-img" />
+    <img src="images/mountain.png" alt="mountain-img" />
+  </header>
+
+  <main id="main" class="middle-container">
+
+    <section class="profile">
+      <img class="img" src="images/angela.png" alt="profile" />
+      <h2>Dr. Angela Yu</h2>
+      <p class="intro">is teaching me legendary layouts from the past like the HTML tables or the CSS float & clear.</p>
+    </section>
+
+    <hr />
+
+    <section class="skills">
+      <h2>On this page</h2>
+      <article class="skill-row skill-left">
+        <a href="https://css-tricks.com/almanac/properties/f/float/" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="CSS-Tricks">
+          <img class="computer img" src="images/computer.png" alt="code-img" />
+        </a>
+        <h3>Float</h3>
+        <p class="clear-left">The float property in CSS is used for positioning and layout on web pages. A common usage might be floating an image to one side and letting text wrap around it.</p>
+      </article>
+
+      <article class="skill-row skill-right">
+        <a href="https://css-tricks.com/almanac/properties/c/clear/" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="CSS-Tricks">
+          <img class="chilli img" src="images/chillies.png" alt="chillies-img" />
+        </a>
+        <h3>Clear</h3>
+        <p class="clear-right">The clear property is directly related to floats. If the element can fit horizontally in the space next to another element which is floated, it will. Unless you apply clear to that element in the same direction as the float. Then the element will move down below the floated element.</p>
+      </article>
+    </section>
+
+    <hr />
+
+    <aside>
+      <h2>Version</h2>
+      <h3>2023</h3>
+      <p>of the</p>
+      <button class="btn">
+        <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="Udemy">Course</a>
+      </button>
+    </aside>
+  </main>
+
+  <footer class="bottom-container">
+    <a href="https://appbrewery.com/p/legacy-complete-web-development-course" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="App Brewery">Capstone</a>
+    <a href="https://www.youtube.com/playlist?list=PLSzsOkUDsvds51lVJYzKWhqr4Ie6UHLx7" target="_blank" rel="noopener noreferrer" title="Opens in a new web-browser-tab" aria-label="YouTube">YouTube</a>
+    <p class="legacy">Legacy versions</p>
+
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+  <noscript>The web-browser does NOT support JavaScript or it is switched off!</noscript>
+
+</body>
+
+</html>

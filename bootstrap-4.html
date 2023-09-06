@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-HU" dir="ltr" id="bootstrap-4">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <meta name="description" content="150-160 karakter, (fókusz)kulcsszavakkal az elején" />
+  <meta name="keywords" content="fókusz,kevésbéfontos,max10" />
+  <meta name="author" content="Hlatky Szabolcs" />
+  <meta name="creator" content="Coding Sable" />
+  <meta name="publisher" content="Ictys" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="distribution" content="global" />
+  <meta name="revised" content="Ictys, 2023/01/01" />
+
+  <title>Cascading StyleSheets - Bootstrap 4 Codeply</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"
+    defer></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+  <figure class="logo">
+    <a href="index.html" title="To the index page.">
+      <img src="images/logo.svg" alt="logo" width="64px" height="64px" />
+    </a>
+    <figcaption>
+      <button type="button" title="Skip to the main content." onclick="location.href='#main';">About</button>
+    </figcaption>
+  </figure>
+
+  <header>
+    <h1>
+      <data value="Cascading Stylesheets">
+        <dfn>
+          <abbr title="Cascading StyleSheets">CSS</abbr>
+        </dfn>
+      </data> Bootstrap 4
+    </h1>
+  </header>
+
+  <hr class="dropdown-divider" />
+
+  <main id="main">
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button type="menu" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <menu class="navbar-nav">
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">nav-link</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                btn
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <button type="menu" class="btn btn-primary">btn-primary</button>
+                </li>
+                <li>
+                  <button type="menu" class="btn btn-dark">btn-dark</button>
+                </li>
+                <li>
+                  <button type="menu" class="btn btn-lg btn-outline-dark">btn-outline-dark</button>
+                </li>
+              </ul>
+            </li>
+
+          </menu>
+        </div>
+        <a class="navbar-brand ml-auto" href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+          target="_blank" rel="noopener no-referrer" title="Opens in a new web-browser-tab."
+          aria-label="Bootstrap 4 documentation">
+          navbar-brand (a element)
+        </a>
+      </nav>
+
+      <h2 class="jumbotron">Bootstrap class="jumbotron" (h2 element)</h2>
+      <p>If the <code>navbar-expand</code> is '-md' or '-sm' then on smaller screens the menu list will be vertical.</p>
+    </section>
+
+    <hr class="dropdown-divider" />
+
+    <section>
+      <h2>row</h2>
+
+      <div class="row">
+        <div class="col bg-danger border border-1 border-dark">col bg-danger border border-1 border-dark</div>
+        <div class="col bg-danger border border-1 border-dark">col bg-danger border border-1 border-dark</div>
+        <div class="col bg-danger border border-1 border-dark">col bg-danger border border-1 border-dark</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 bg-success border border-1 border-dark">col-6 bg-success border border-1 border-dark</div>
+        <div class="col-3 bg-success border border-1 border-dark">col-3 bg-success border border-1 border-dark</div>
+        <div class="col-2 bg-success border border-1 border-dark">col-2 bg-success border border-1 border-dark</div>
+        <div class="col-1 bg-success border border-1 border-dark">col-1 bg-success border border-1 border-dark</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 bg-primary border border-1 border-dark">col-md-6 bg-primary border border-1 border-dark
+        </div>
+        <div class="col-md-6 bg-primary border border-1 border-dark">row / col-md-6 bg-primary border border-1
+          border-dark</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 bg-warning border border-1 border-dark">col-lg-3 bg-warning border border-1 border-dark
+        </div>
+        <div class="col-lg-3 bg-warning border border-1 border-dark">col-lg-3 bg-warning border border-1 border-dark
+        </div>
+        <div class="col-lg-3 bg-warning border border-1 border-dark">col-lg-3 bg-warning border border-1 border-dark
+        </div>
+        <div class="col-lg-3 bg-warning border border-1 border-dark">col-lg-3 bg-warning border border-1 border-dark
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 bg-info border border-1 border-dark">col-lg-3 col-md-4 col-sm-6 bg-info
+          border border-1 border-dark</div>
+        <div class="col-lg-3 col-md-4 col-sm-6 bg-info border border-1 border-dark">col-lg-3 col-md-4 col-sm-6 bg-info
+          border border-1 border-dark</div>
+        <div class="col-lg-3 col-md-4 col-sm-6 bg-info border border-1 border-dark">col-lg-3 col-md-4 col-sm-6 bg-info
+          border border-1 border-dark</div>
+        <div class="col-lg-3 col-md-4 col-sm-6 bg-info border border-1 border-dark">col-lg-3 col-md-4 col-sm-6 bg-info
+          border border-1 border-dark</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+        <div class="col-lg-2 col-md-3 col-sm-12 bg-secondary border border-1 border-dark">col-lg-2 col-md-3 col-sm-12
+          bg-secondary border border-1 border-dark</div>
+      </div>
+
+    </section>
+
+    <hr class="dropdown-divider" />
+
+    <section>
+      <div class="container bg-light">container bg-light</div>
+      <div class="container-fluid bg-white">container-fluid bg-white</div>
+    </section>
+
+    <hr class="dropdown-divider" />
+
+    <section>
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000"
+        data-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/536/354" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://unsplash.it/386/292" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="dropdown-divider" />
+
+    <section>
+
+      <div class="row">
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>grid system:</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <p>A row can contain 12 col. If we have more, then the last col goes under.</p>
+              <p>class="col" means it will grow and shrink equally with other cols.</p>
+              <p>class="col-*" *1-12 digits. The col will take the numbered size from the twelve.</p>
+              <p>class="col-*-*" *min-width size (xs, sm, md, lg)  and *1-12 digits.</p>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>$grid-breakpoints:</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <p>xs: 0</p>
+              <p>sm: 480px</p>
+              <p>md: 768px</p>
+              <p>lg: 1024px</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>$container-max-widths:</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99 / mo</h2>
+              <p>sm: 420px</p>
+              <p>md: 720px</p>
+              <p>lg: 960px</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <address class="©貂">
+      <button type="button" title="Go to page top" aria-label="Bookmark" onclick="location.href='#top';">
+        <picture>
+          <!-- <source sizes="" srcset="" type="image/" media="(min-width: )" /> -->
+          <img src="images/copyright.png" alt="Copyright to Coding Sable" width="32px" height="32px" />
+        </picture>
+      </button>
+    </address>
+  </footer>
+
+</body>
+
+</html>
